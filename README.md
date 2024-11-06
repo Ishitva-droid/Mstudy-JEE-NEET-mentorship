@@ -1,224 +1,160 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharda Prasad Jewellers - Luxury Jewelry</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-        /* Navbar */
-        nav {
-            background-color: #fff;
-            padding: 10px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-        }
-        nav a {
-            text-decoration: none;
-            color: #333;
-            margin: 0 20px;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #bfa64b;
-        }
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 30px;
-            color: #bfa64b;
-        }
-        /* Hero Section */
-        .hero {
-            background-image: url('hero-banner.jpg'); /* Add a hero banner */
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            position: relative;
-        }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6); /* Dark overlay */
-        }
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 60px;
-            position: relative;
-            z-index: 2;
-        }
-        .hero p {
-            font-size: 20px;
-            position: relative;
-            z-index: 2;
-        }
-        .cta-btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: #bfa64b;
-            color: white;
-            border-radius: 30px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            margin-top: 20px;
-            font-weight: bold;
-        }
-        .cta-btn:hover {
-            background-color: #a5873b;
-        }
-        /* Jewelry Collection Section */
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 50px 20px;
-        }
-        .collection-title {
-            text-align: center;
-            font-size: 35px;
-            font-family: 'Playfair Display', serif;
-            margin-bottom: 50px;
-            color: #333;
-        }
-        .jewelry-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        .jewelry-item {
-            background-color: #fff;
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .jewelry-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-        }
-        .jewelry-item img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        .jewelry-item h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 24px;
-            color: #bfa64b;
-            margin-bottom: 10px;
-        }
-        .jewelry-item p {
-            font-size: 16px;
-            color: #666;
-        }
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 30px 0;
-        }
-        footer a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        footer a:hover {
-            color: #bfa64b;
-        }
-        footer p {
-            font-size: 14px;
-            margin: 0;
-        }
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 40px;
-            }
-            .hero p {
-                font-size: 18px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposal Page for Ekta ❤️</title>
+
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Global Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffdee9, #b5fffc);
+      color: #ff3366;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Container Styling */
+    .container {
+      max-width: 600px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transform: scale(0.9);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .container.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Heading Styling */
+    h1, h2 {
+      font-family: 'Great Vibes', cursive;
+      color: #ff66a3;
+      font-size: 3em;
+      margin-bottom: 30px;
+    }
+
+    /* Buttons Styling */
+    .button {
+      display: inline-block;
+      margin: 25px;
+      padding: 20px 40px;
+      font-size: 1.5em;
+      color: #fff;
+      background: #ff4d4d;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+    }
+    .button:hover {
+      background: #ff80a6;
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Certificate Styling */
+    .certificate {
+      font-family: 'Poppins', sans-serif;
+      text-align: left;
+      padding: 40px;
+      background-color: #ffe6f7;
+      border: 2px solid #ff99cc;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(255, 153, 204, 0.3);
+      margin-top: 40px;
+    }
+    .certificate h2 {
+      font-size: 2.5em;
+      color: #ff66a3;
+      margin-bottom: 20px;
+    }
+    .certificate p {
+      font-size: 1.5em;
+      font-style: italic;
+      color: #ff3366;
+    }
+
+    /* Emoji Animations */
+    .emoji {
+      font-size: 3em;
+      animation: bounce 1.5s infinite;
+      display: inline-block;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    /* Thumbprint Styling */
+    .thumbprint {
+      font-size: 3.5em;
+      color: #ff66a3;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+  </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav>
-    <div class="logo">Sharda Prasad Jewellers</div>
-    <div>
-        <a href="#">Home</a>
-        <a href="#">Collection</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </div>
-</nav>
+  <!-- Main Container -->
+  <div id="page1" class="container active">
+    <h1>Ekta, do you like me? ❤️</h1>
+    <button class="button" onclick="showNext('page2')">Yes</button>
+    <button class="button" onclick="noResponse()">No</button>
+  </div>
 
-<!-- Hero Section -->
-<div class="hero">
-    <div>
-        <h1>Luxury Jewelry for Every Occasion</h1>
-        <p>Explore our exclusive collection of gold, diamond, and silver jewelry.</p>
-        <a href="#" class="cta-btn">Discover Now</a>
-    </div>
-</div>
+  <div id="page2" class="container">
+    <h2>I love you too, Ekta ji 💖</h2>
+    <p>ye niche jo kiss wla emoji hai na isko dabado ek baar and jst feel ki hum kiss kr liye h 😘</p>
+    <button class="button emoji" onclick="showNext('page3')">😘</button>
+  </div>
 
-<!-- Jewelry Collection Section -->
-<div class="container">
-    <h2 class="collection-title">Our Exclusive Collection</h2>
-    <div class="jewelry-grid">
-        <!-- Jewelry Item 1 -->
-        <div class="jewelry-item">
-            <img src="gold-pendant.jpg" alt="Gold Pendant">
-            <h3>Gold Pendant</h3>
-            <p>Elegant and timeless gold pendants, crafted for perfection.</p>
-        </div>
-        <!-- Jewelry Item 2 -->
-        <div class="jewelry-item">
-            <img src="silver-anklet.jpg" alt="Silver Anklet">
-            <h3>Silver Anklet</h3>
-            <p>Intricately designed silver anklets that add grace to every step.</p>
-        </div>
-        <!-- Jewelry Item 3 -->
-        <div class="jewelry-item">
-            <img src="diamond-necklace.jpg" alt="Diamond Necklace">
-            <h3>Diamond Necklace</h3>
-            <p>A dazzling diamond necklace that defines elegance and luxury.</p>
-        </div>
-    </div>
-</div>
+  <div id="page3" class="container">
+    <h2>kuch puchna h, Will you marry me, Ekta? 💍</h2>
+    <button class="button" onclick="showNext('page4')">Yes, I will marry you</button>
+    <button class="button" onclick="showNext('page4')">Haan, mere Ishitva ji</button>
+  </div>
 
-<!-- Footer -->
-<footer>
-    <p>&copy; 2024 Sharda Prasad Jewellers, Shohratgarh, Siddharthnagar. All Rights Reserved.</p>
-    <p>
-        <a href="#">Facebook</a> | 
-        <a href="#">Instagram</a> | 
-        <a href="#">Twitter</a>
-    </p>
-</footer>
+  <div id="page4" class="container certificate">
+    <h2>Certificate of Love & Future Marriage</h2>
+    <p>This certifies that Ekta and Ishitva are bound together in love forever and are excited to begin a beautiful journey together. hehe ab to tum hmari sach me wife bn hi gyi aaj🙈accha suno raat ko pkd ke sona wo bhi naked fully🌚 ...chipka jayega🙈🙈 💞</p>
+    <p>They vow to support, cherish, and adore each other for all time.</p>
+    <div class="thumbprint">💖 Ekta ek sign krke hme send krna for this agreement💖</div>
+  </div>
+
+  <!-- JavaScript for Page Transitions and Response Handling -->
+  <script>
+    // Function to show the next page
+    function showNext(pageId) {
+      document.querySelectorAll('.container').forEach(page => page.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+
+    // Function for 'No' response
+    function noResponse() {
+      alert("suno ji aise glt button na press kro bhut pyar krte h hum tumse! 💔");
+    }
+  </script>
 
 </body>
 </html>
