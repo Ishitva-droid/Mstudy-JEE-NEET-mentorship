@@ -1,152 +1,73 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surprise for Ishika Didi</title>
+    <title>Ishika Didi</title>
     <style>
         body {
             margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #fbe3e8;
-            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #ffe5ec, #ffd3b6);
+            color: #333;
         }
-
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            text-align: center;
+            padding: 50px;
         }
-
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
         h1 {
-            color: #e63946;
-            font-size: 3rem;
+            font-size: 2.5em;
+            color: #ff5e78;
+            margin: 20px 0;
         }
-
         p {
-            color: #6d6875;
-            font-size: 1.5rem;
+            font-size: 1.2em;
+            margin: 10px 0;
         }
-
-        .heart {
-            font-size: 5rem;
-            color: #e63946;
-            animation: pulse 1s infinite;
+        .highlight {
+            color: #ff8b94;
+            font-weight: bold;
         }
-
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.2);
-            }
-        }
-
         .button {
             margin-top: 20px;
-            padding: 15px 30px;
-            font-size: 1.2rem;
-            color: white;
-            background-color: #6a4c93;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s ease;
         }
-
-        .button:hover {
-            background-color: #9c89b8;
+        .button a {
+            display: inline-block;
+            text-decoration: none;
+            background: #ff5e78;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            transition: background 0.3s;
         }
-
-        #popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            z-index: 1000;
-            text-align: center;
+        .button a:hover {
+            background: #ff3b57;
         }
-
-        #popup img {
-            width: 70%;
-            max-width: 800px;
+        footer {
             margin-top: 50px;
-            border-radius: 10px;
-        }
-
-        #popup h2 {
-            color: white;
-            font-size: 2.5rem;
-            margin-top: 20px;
-        }
-
-        #popup .heart {
-            font-size: 6rem;
-        }
-
-        #popup .button {
-            margin-top: 20px;
-            background-color: #457b9d;
-        }
-
-        .party-popper {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 80px;
-            animation: popper 2s ease-in-out forwards;
-            display: none;
-        }
-
-        @keyframes popper {
-            0% {
-                opacity: 0;
-                transform: scale(0.5);
-            }
-            50% {
-                opacity: 1;
-                transform: scale(1.2);
-            }
-            100% {
-                opacity: 0;
-                transform: scale(1.5);
-            }
+            font-size: 0.9em;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Surprise for the Best Sister!</h1>
-        <p>Thank you, Ishika Didi, for being the most amazing sister ever!</p>
-        <div class="heart">❤️</div>
-        <button class="button" onclick="revealSurprise()">Press Here for a Special Surprise</button>
+        <img src="/mnt/data/Screenshot%202024-12-25%20231616.png" alt="Ishika Didi" class="profile-pic">
+        <h1>Welcome to Ishika Didi's World</h1>
+        <p>Here's to celebrating the amazing person you are, <span class="highlight">Ishika Didi</span>! This webpage is made just for you.</p>
+        <div class="button">
+            <a href="#">Know More</a>
+        </div>
     </div>
-
-    <div id="popup">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Himalayas_panorama.jpg" alt="Himalayas" id="himalayas">
-        <h2><span class="heart">❤️</span> Thank You Didi! <span class="heart">❤️</span></h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Confetti.png" alt="Party Popper" class="party-popper" id="popper">
-        <button class="button" onclick="closePopup()">Close</button>
-    </div>
-
-    <script>
-        function revealSurprise() {
-            document.querySelector('#popup').style.display = 'block';
-            const popper = document.querySelector('#popper');
-            popper.style.display = 'block';
-            setTimeout(() => popper.style.display = 'none', 2000); // Hide party popper after animation
-        }
-
-        function closePopup() {
-            document.querySelector('#popup').style.display = 'none';
-        }
-    </script>
+    <footer>
+        <p>Created with ❤️ by your biggest admirer.</p>
+    </footer>
 </body>
 </html>
