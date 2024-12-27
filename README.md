@@ -62,8 +62,8 @@
 </head>
 <body>
     <div class="certificate">
-        <h1>Certificate of Achievement</h1>
-        <h2>Congratulations Miss Ishika Verma</h2>
+        <h1>CERTIFICATE OF ACHIEVEMENT</h1>
+        <h2>Congratulations ! Miss Ishika Verma</h2>
         <p>
             This is to certify that <span class="highlight">Miss Ishika Verma</span> has successfully completed her internship in Computer Science Engineering (CSE) at <span class="highlight">Softpro Company, Lucknow</span>.
         </p>
@@ -72,7 +72,8 @@
         </p>
         <div class="footer">
             Duration of Internship: <span class="highlight">{Sept 2024 - Nov2024} 
-45 days</span>
+45 days
+ ;{Click on the link to view star performer  certificate :- <a href>https://drive.google.com/file/d/19dV6UivvkutyruKF90SGYrcd03nuJPxl/view?usp=drive_link}</span>
         </div>
     </div>
 </body>
