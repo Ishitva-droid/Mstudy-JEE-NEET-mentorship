@@ -63,7 +63,7 @@
 <body>
     <div class="certificate">
         <h1>CERTIFICATE OF ACHIEVEMENT</h1>
-        <h2>Congratulations ! Miss Ishika Verma</h2>
+        <h2>Congratulations ! Miss Samriddhi Verma</h2>
         <p>
             This is to certify that <span class="highlight">Miss Ishika Verma</span> has successfully completed her internship in Computer Science Engineering (CSE) at <span class="highlight">Softpro Company, Lucknow</span>.
         </p>
