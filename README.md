@@ -71,9 +71,10 @@
             Your dedication and hard work have been exemplary. We wish you all the best for your future endeavors and hope you achieve greater heights in your career.
         </p>
         <div class="footer">
-            Duration of Internship: <span class="highlight">{Sept 2024 - Nov2024} 
-45 days
- ;{Click on the link to view star performer  certificate :- <a href>https://drive.google.com/file/d/19dV6UivvkutyruKF90SGYrcd03nuJPxl/view?usp=drive_link}</span>
+            Duration of Internship: <span class="highlight">{Sept 2024 - Nov2024} 45 days
+
+ ;{Click on the link to view star performer  certificate :- <a href>https://drive.google.com/file/d/19dV6UivvkutyruKF90SGYrcd03nuJPxl/view?usp=drive_link} 
+</span>
         </div>
     </div>
 </body>
