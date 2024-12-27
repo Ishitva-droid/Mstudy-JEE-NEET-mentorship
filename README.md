@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>District Siddharthnagar Administration</title>
+    <title>District SIDDHARTHNAGAR</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -69,8 +69,8 @@
 <body>
 
 <header>
-    <h1>District Siddharthnagar Administration</h1>
-    <p>District Magistrate: <strong>Dr. Ashok Kumar Singh</strong></p>
+    <h1>District SIDDHARTHNAGAR</h1>
+    <p>District Magistrate: <strong>Dr. Rajaganapathy R, IAS</strong></p>
 </header>
 
 <section>
@@ -83,9 +83,9 @@
 <section>
     <h2>Administrative Structure</h2>
     <div class="info">
-        <p><strong>District Magistrate (DM):</strong> Dr. Ashok Kumar Singh</p>
+        <p><strong>District Magistrate (DM):</strong> Dr. Rajaganapathy R, IAS</p>
         <p><strong>Sub-Divisional Magistrates (SDMs):</strong> Mr. Anil Verma, Ms. Priya Sharma</p>
-        <p><strong>Number of Blocks:</strong> 9</p>
+        <p><strong>Number of Blocks:</strong> 14</p>
     </div>
 </section>
 
@@ -93,14 +93,26 @@
     <h2>Connectivity</h2>
     <div class="info">
         <h3>Road Connectivity</h3>
-        <p>Well-connected via National Highways and state highways, Siddharthnagar ensures smooth travel to neighboring cities and districts.</p>
+        <p>National Highway 28: Connects Siddharthnagar to Basti, Tanda, Azamgarh, Bansi, Naugarh, and Varanasi.</p>
+          <p> National Highway 730: Connects Siddharthnagar to Gorakhpur.</p>
+            <p>State Highway 1A : Connects Siddharthnagar to Maharajganj, Balrampur, and Gonda.</p>
+              <p>State Highway 5: Connects Siddharthnagar to Basti, Ambedakarnagar, Jaunpur, Bhadohi, Mirzapur, and Sonbhadra. </p>
 
         <h3>Rail Connectivity</h3>
         <p>The nearest railway station is Siddharthnagar Junction, connected to major cities like Gorakhpur, Lucknow, and Delhi.</p>
+<p> #Other Railway Stations of Siddharthnagar District :- </p>
+<p> Shohratgarh(SOT) </p>
+<p>Barhni (BNY) </p>
+<p>Uska Bazar (UB) </p>
+<p> And other Regional Railway stations </p>
 
         <h3>Air Connectivity</h3>
-        <p>The nearest airport is Gorakhpur Airport, approximately 90 kilometers away, offering domestic flight services.</p>
+        <p>The nearest domestic airport is Mahayogi gorakhnath domestic Airport, approximately 90 kilometers away.</p>
+<p> The nearest international airport is Chaudhary charan Singh International Airport , approximately 275 kilometers away. </p>
+<h4> District's Official Information bulletin </h4>
+
     </div>
+
 </section>
 
 <footer>
