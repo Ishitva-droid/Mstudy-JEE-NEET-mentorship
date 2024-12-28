@@ -69,7 +69,7 @@
 <body>
 
 <header>
-    <h1>District SIDDHARTHNAGAR</h1>
+    <h1>Ishitva Aerospace Labs</h1>
     <p>District Magistrate: <strong>Dr. Rajaganapathy R, IAS</strong></p>
 </header>
 
