@@ -3,121 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>District SIDDHARTHNAGAR</title>
+    <title>District Information Bulletin</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
-            color: #343a40;
+            background: linear-gradient(90deg, #007BFF, #FFA500);
+            color: #333;
         }
-
         header {
-            background-color: rgb(0, 51, 102);
+            background-color: #0056b3;
             color: white;
-            padding: 20px;
+            padding: 20px 10px;
             text-align: center;
-        }
 
-        header h1 {
-            font-size: 2.5em;
         }
-
-        section {
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004a99;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
             padding: 20px;
-            margin: 10px auto;
             max-width: 1200px;
-            background: white;
+            margin: auto;
+        }
+        .section {
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
-        section h2 {
-            font-size: 2em;
-            color: rgb(0, 51, 102);
+        .section h2 {
+            color: #007BFF;
             margin-bottom: 10px;
         }
-
-        .info {
-            margin-bottom: 20px;
-        }
-
-        .info p {
-            line-height: 1.6;
-        }
-
         footer {
-            background-color: rgb(0, 51, 102);
+            background-color: #004a99;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: sticky;
-            bottom: 0;
+            padding: 10px 0;
+            margin-top: 20px;
         }
-
-        a {
-            color: rgb(0, 102, 204);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
+        img {
+            max-width: 100%;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
+    <header>
 
-<header>
-    <h1>Ishitva Aerospace Labs</h1>
-    <p>District Magistrate: <strong>Dr. Rajaganapathy R, IAS</strong></p>
-</header>
-
-<section>
-    <h2>District History</h2>
-    <div class="info">
-        <p>Located in the state of Uttar Pradesh, Siddharthnagar is named after the childhood name of Gautam Buddha, Siddhartha. The district is rich in cultural and historical heritage, making it a notable place for history enthusiasts.</p>
-    </div>
-</section>
-
-<section>
-    <h2>Administrative Structure</h2>
-    <div class="info">
-        <p><strong>District Magistrate (DM):</strong> Dr. Rajaganapathy R, IAS</p>
-        <p><strong>Sub-Divisional Magistrates (SDMs):</strong> Mr. Anil Verma, Ms. Priya Sharma</p>
-        <p><strong>Number of Blocks:</strong> 14</p>
-    </div>
-</section>
-
-<section>
-    <h2>Connectivity</h2>
-    <div class="info">
-        <h3>Road Connectivity</h3>
-        <p>National Highway 28: Connects Siddharthnagar to Basti, Tanda, Azamgarh, Bansi, Naugarh, and Varanasi.</p>
-          <p> National Highway 730: Connects Siddharthnagar to Gorakhpur.</p>
-            <p>State Highway 1A : Connects Siddharthnagar to Maharajganj, Balrampur, and Gonda.</p>
-              <p>State Highway 5: Connects Siddharthnagar to Basti, Ambedakarnagar, Jaunpur, Bhadohi, Mirzapur, and Sonbhadra. </p>
-
-        <h3>Rail Connectivity</h3>
-        <p>The nearest railway station is Siddharthnagar Junction, connected to major cities like Gorakhpur, Lucknow, and Delhi.</p>
-<p> #Other Railway Stations of Siddharthnagar District :- </p>
-<p> Shohratgarh(SOT) </p>
-<p>Barhni (BNY) </p>
-<p>Uska Bazar (UB) </p>
-<p> And other Regional Railway stations </p>
-
-        <h3>Air Connectivity</h3>
-        <p>The nearest domestic airport is Mahayogi gorakhnath domestic Airport, approximately 90 kilometers away.</p>
-<p> The nearest international airport is Chaudhary charan Singh International Airport , approximately 275 kilometers away. </p>
-<h4> District's Official Information bulletin </h4>
-
+    <div style="display: flex; align-items: center;">
+        <img src="C:\Users\91930\Downloads\DMSIR.jpg" alt="District Logo" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%;">
+        <div>
+            <h1>District Information Bulletin</h1>
+            <p>Your one-stop platform for all district updates and bulletins</p>
+        </div>
     </div>
 
-</section>
 
-<footer>
-    <p>&copy; 2024 District Siddharthnagar Administration. All Rights Reserved.</p>
-</footer>
+        <h1>जिला सूचना बुलेटिन</h1>
+        <p>Your one-stop platform for all district updates and bulletins</p>
+    </header>
 
+    <nav>
+        <a href="#news">News</a>
+        <a href="#events">Events</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <div class="section" id="news">
+            <h2>Latest News</h2>
+            <p>Stay updated with the latest news and announcements from across the district. Click on the links below for detailed information.</p>
+            <ul>
+                <li><a href="#">https://siddharthnagar.nic.in/</a></li>
+                <li><a href="#">https://siddharthnagar.nic.in/one-district-one-product-kalanamak-rice/</a></li>
+                <li><a href="#">https://siddharthnagar.nic.in/siddharthnagar-mahotsav-2024/</a></li>
+            </ul>
+        </div>
+
+        <div class="section" id="events">
+            <h2>Prime Minister's Vision</h2>
+            <p>Don't miss out on the upcoming district events and activities:</p>
+            <ul>
+                <li>Annual Cultural Fest - <strong>Jan 15, 2025</strong></li>
+                <li>Farmers' Workshop - <strong>Feb 5, 2025</strong></li>
+                <li>Job Fair - <strong>March 10, 2025</strong></li>
+            </ul>
+            <img src="D:\Downloads new\pictures\Screenshots\OOO.png" alt="Description of the image" style="width: 100%; border-radius: 8px;">
+
+        </div>
+
+        <div class="section" id="resources">
+            <h2>Important Resources</h2>
+            <p>Access useful resources and links related to district administration:</p>
+            <ul>
+                <li><a href="#">https://siddharthnagar.nic.in/</a></li>
+                <li><a href="#">https://siddharthnagar.nic.in/public-utility-category/hospitals/</a></li>
+                <li><a href="#">https://siddharthnagar.nic.in/about-district/whos-who/</a></li>
+            </ul>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out:</p>
+            <p>Email: <a href="dmsid@nic.in">dmsid@nic.in</a></p>
+            <p>Phone: 9454417530 .</p>
+            <p>Address: District Magistrate , Siddharthnagar</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 District Information Bulletin. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
