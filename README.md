@@ -3,133 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>District Information Bulletin</title>
+    <title>Happy New Year 2025</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(90deg, #007BFF, #FFA500);
-            color: #333;
-        }
-        header {
-            background-color: #0056b3;
-            color: white;
-            padding: 20px 10px;
-            text-align: center;
-
-        }
-        nav {
+            height: 100vh;
             display: flex;
+            align-items: center;
             justify-content: center;
-            background-color: #004a99;
-            padding: 10px 0;
+            background: linear-gradient(135deg, #ff0000, #00ff00, #0000ff);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+            font-family: Arial, sans-serif;
         }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
-        nav a:hover {
-            text-decoration: underline;
-        }
+
         .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .section {
-            margin-bottom: 20px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .section h2 {
-            color: #007BFF;
-            margin-bottom: 10px;
-        }
-        footer {
-            background-color: #004a99;
-            color: white;
             text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
+            color: white;
+            padding: 20px;
+            border: 5px solid white;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
         }
-        img {
-            max-width: 100%;
-            border-radius: 8px;
+
+        .hearts {
+            font-size: 2rem;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .flower {
+            font-size: 1.5rem;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff1493;
+        }
+
+        .message {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-
-    <div style="display: flex; align-items: center;">
-        <img src="C:\Users\91930\Downloads\DMSIR.jpg" alt="District Logo" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%;">
-        <div>
-            <h1>District Information Bulletin</h1>
-            <p>Your one-stop platform for all district updates and bulletins</p>
-        </div>
-    </div>
-
-
-        <h1>जिला सूचना बुलेटिन</h1>
-        <p>Your one-stop platform for all district updates and bulletins</p>
-    </header>
-
-    <nav>
-        <a href="#news">News</a>
-        <a href="#events">Events</a>
-        <a href="#resources">Resources</a>
-        <a href="#contact">Contact Us</a>
-    </nav>
-
     <div class="container">
-        <div class="section" id="news">
-            <h2>Latest News</h2>
-            <p>Stay updated with the latest news and announcements from across the district. Click on the links below for detailed information.</p>
-            <ul>
-                <li><a href="#">https://siddharthnagar.nic.in/</a></li>
-                <li><a href="#">https://siddharthnagar.nic.in/one-district-one-product-kalanamak-rice/</a></li>
-                <li><a href="#">https://siddharthnagar.nic.in/siddharthnagar-mahotsav-2024/</a></li>
-            </ul>
-        </div>
-
-        <div class="section" id="events">
-            <h2>Prime Minister's Vision</h2>
-            <p>Don't miss out on the upcoming district events and activities:</p>
-            <ul>
-                <li>Annual Cultural Fest - <strong>Jan 15, 2025</strong></li>
-                <li>Farmers' Workshop - <strong>Feb 5, 2025</strong></li>
-                <li>Job Fair - <strong>March 10, 2025</strong></li>
-            </ul>
-            <img src="D:\Downloads new\pictures\Screenshots\OOO.png" alt="Description of the image" style="width: 100%; border-radius: 8px;">
-
-        </div>
-
-        <div class="section" id="resources">
-            <h2>Important Resources</h2>
-            <p>Access useful resources and links related to district administration:</p>
-            <ul>
-                <li><a href="#">https://siddharthnagar.nic.in/</a></li>
-                <li><a href="#">https://siddharthnagar.nic.in/public-utility-category/hospitals/</a></li>
-                <li><a href="#">https://siddharthnagar.nic.in/about-district/whos-who/</a></li>
-            </ul>
-        </div>
-
-        <div class="section" id="contact">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or need assistance, feel free to reach out:</p>
-            <p>Email: <a href="dmsid@nic.in">dmsid@nic.in</a></p>
-            <p>Phone: 9454417530 .</p>
-            <p>Address: District Magistrate , Siddharthnagar</p>
-        </div>
+        <h1>🎉✨ Happy New Year 2025! ✨🎉</h1>
+        <p class="hearts">❤️🩷❤️‍🔥🤍🩵</p>
+        <p class="flower">🌸✨🌙😇🐿️🥰</p>
+        <p>Enter your name to personalize your wish:</p>
+        <input type="text" id="userName" placeholder="Your Name">
+        <button onclick="generateMessage()">Generate Wish</button>
+        <div id="wishMessage" class="message"></div>
     </div>
 
-    <footer>
-        <p>&copy; 2025 District Information Bulletin. All Rights Reserved.</p>
-    </footer>
+    <script>
+        function generateMessage() {
+            const name = document.getElementById('userName').value;
+            if (name.trim() === "") {
+                alert("Please enter your name to proceed!");
+                return;
+            }
+            const wishContainer = document.getElementById('wishMessage');
+            wishContainer.innerHTML = `
+                <h2>Dear <strong>${name}</strong>,</h2>
+                <p>May 2025 be your best year yet, filled with love, success, and endless happiness. 🌟 Let’s make unforgettable memories and chase dreams together. Here's to an extraordinary year ahead! ~ Ishitva (Mayuk) </p>
+                <p class="hearts">❤️🌙✨🤗🩵🩷🤍❤️‍🔥❤️</p>
+            `;
+        }
+    </script>
 </body>
 </html>
