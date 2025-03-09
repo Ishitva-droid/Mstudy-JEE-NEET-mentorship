@@ -3,104 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy New Year 2025</title>
+    <title>Mstudy Mentorship - JEE & NEET</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #ff0000, #00ff00, #0000ff);
-            background-size: 400% 400%;
-            animation: gradient 10s ease infinite;
             font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            background: linear-gradient(-45deg, #ff4b1f, #1fddff, #fc00ff, #00dbde);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
         }
-
-        @keyframes gradient {
+        @keyframes gradientBG {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
-
-        .container {
-            text-align: center;
-            color: white;
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 20px;
-            border: 5px solid white;
-            border-radius: 15px;
-            background: rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+            background: rgba(0, 0, 0, 0.8);
         }
-
-        .hearts {
-            font-size: 2rem;
-            animation: pulse 1.5s infinite;
+        .logo {
+            width: 80px;
         }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.2); }
-            100% { transform: scale(1); }
+        nav ul {
+            list-style: none;
+            display: flex;
         }
-
-        .flower {
-            font-size: 1.5rem;
+        nav ul li {
+            margin: 0 15px;
         }
-
-        input {
-            padding: 10px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            margin: 10px 0;
-        }
-
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
+        nav ul li a {
             color: white;
-            background-color: #ff69b4;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
         }
-
-        button:hover {
-            background-color: #ff1493;
+        .section {
+            padding: 50px 20px;
+            margin: 20px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.7);
         }
-
-        .message {
-            margin-top: 20px;
+        footer {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        a {
+            color: #00dbde;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🎉✨ Happy New Year 2025! ✨🎉</h1>
-        <p class="hearts">❤️🩷❤️‍🔥🤍🩵</p>
-        <p class="flower">🌸✨🌙😇🐿️🥰</p>
-        <p>Enter your name to personalize your wish:</p>
-        <input type="text" id="userName" placeholder="Your Name">
-        <button onclick="generateMessage()">Generate Wish</button>
-        <div id="wishMessage" class="message"></div>
-    </div>
+    <header>
+        <img src="logo.png" alt="Mstudy Logo" class="logo">
+        <h1>Mstudy Mentorship - JEE & NEET</h1>
+        <nav>
+            <ul>
+                <li><a href="#jee">JEE Section</a></li>
+                <li><a href="#neet">NEET Section</a></li>
+                <li><a href="#mentors">Mentors</a></li>
+                <li><a href="#courses">New Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="jee" class="section jee">
+        <h2>JEE Mentorship Program</h2>
+        <p>Join our expert mentorship program for JEE aspirants...</p>
+    </section>
 
-    <script>
-        function generateMessage() {
-            const name = document.getElementById('userName').value;
-            if (name.trim() === "") {
-                alert("Please enter your name to proceed!");
-                return;
-            }
-            const wishContainer = document.getElementById('wishMessage');
-            wishContainer.innerHTML = `
-                <h2>Dear <strong>${name}</strong>,</h2>
-                <p>May 2025 be your best year yet, filled with love, success, and endless happiness. 🌟 Let’s make unforgettable memories and chase dreams together. Here's to an extraordinary year ahead! ~ Ishitva (Mayuk) </p>
-                <p class="hearts">❤️🌙✨🤗🩵🩷🤍❤️‍🔥❤️</p>
-            `;
-        }
-    </script>
+    <section id="neet" class="section neet">
+        <h2>NEET Mentorship Program</h2>
+        <p>Exclusive guidance for NEET students by top mentors...</p>
+    </section>
+
+    <section id="courses" class="section courses">
+        <h2>New Course Launch</h2>
+        <p>Upcoming courses with expert guidance...</p>
+    </section>
+    
+    <section id="mentors" class="section mentors">
+        <h2>Our Mentors</h2>
+        <p>Meet our expert mentors...</p>
+    </section>
+    
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@mstudy.com</p>
+        <p>Telegram: <a href="https://t.me/Mstudy_JEEneet" target="_blank">Join Here</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mstudy Mentorship. All rights reserved.</p>
+    </footer>
 </body>
 </html>
