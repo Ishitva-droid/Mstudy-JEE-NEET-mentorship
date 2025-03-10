@@ -76,7 +76,8 @@
 </head>
 <body>
     <header>
-        <img src="C:\Users\91930\Downloads\Yellow Retro Black Podcast Channel YouTube Logo.png" alt="Mstudy Logo" class="logo">
+       <img src="https://raw.githubusercontent.com/ishitva-droid/Mstudy-JEE-NEET-mentorship/main/images/Ved.png" alt="Ved Image">
+
         <h1>Mstudy JEE/NEET Mentorship</h1>
     </header>
 
