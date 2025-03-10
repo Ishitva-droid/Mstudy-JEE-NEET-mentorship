@@ -1,107 +1,155 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mstudy Mentorship - JEE & NEET</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mstudy JEE/NEET Mentorship</title>
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: Merlin, sans-serif;
             color: white;
-            text-align: center;
-            background: linear-gradient(-45deg, #ff4b1f, #1fddff, #fc00ff, #00dbde);
+            background: linear-gradient(270deg, rgba(255,0,0,0.5), rgba(0,255,0,0.5), rgba(0,0,255,0.5));
             background-size: 400% 400%;
-            animation: gradientBG 10s ease infinite;
+            animation: gradient 15s ease infinite;
         }
-        @keyframes gradientBG {
+
+        @keyframes gradient {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
+
         header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            text-align: center;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
         }
+
         .logo {
-            width: 80px;
+            width: 100px;
         }
-        nav ul {
-            list-style: none;
-            display: flex;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .section {
-            padding: 50px 20px;
-            margin: 20px;
-            border-radius: 10px;
-            background: rgba(0, 0, 0, 0.7);
-        }
-        footer {
+
+        section {
             padding: 20px;
+            margin: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+
+        .course-section, .mentor {
+            margin: 10px 0;
+        }
+
+        .course-image {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .mentor img {
+            width: 80px;
+            border-radius: 50%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
             background: rgba(0, 0, 0, 0.8);
         }
-        a {
-            color: #00dbde;
+
+        .mentorship-form a {
+            color: #00ff00;
+            text-decoration: none;
             font-weight: bold;
+        }
+
+        .mentor-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .mentor {
+            text-align: center;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Mstudy Logo" class="logo">
-        <h1>Mstudy Mentorship - JEE & NEET</h1>
-        <nav>
-            <ul>
-                <li><a href="#jee">JEE Section</a></li>
-                <li><a href="#neet">NEET Section</a></li>
-                <li><a href="#mentors">Mentors</a></li>
-                <li><a href="#courses">New Courses</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <img src="C:\Users\91930\Downloads\Yellow Retro Black Podcast Channel YouTube Logo.png" alt="Mstudy Logo" class="logo">
+        <h1>Mstudy JEE/NEET Mentorship</h1>
     </header>
-    
-    <section id="jee" class="section jee">
-        <h2>JEE Mentorship Program</h2>
-        <p>Join our expert mentorship program for JEE aspirants...</p>
+
+    <section class="mentorship-form">
+        <h2>Join Our Mentorship Program</h2>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5zMfQvIMBCFZCw2KhmFvyAraBxU_dNhn4aWJP5AxmCls1uA/viewform" target="_blank">Fill out the Mentorship Form</a><br>
+<p>Join our Telegram Channel: <a href="https://t.me/mstudy_channel" target="_blank">Mstudy Telegram</a></p><br>
+<br><b>NOTICE SECTION :-</b>
+<b>We Mstudy had decided yesterday that we are going to make our initiative a step more closer to a revolutionary program , So to encourage and advertise among students so that we can mentor a large number of students base present on Telegram .
+so from tomorrow we will be starting our first online batch 'Bahubali Batch' for JEE/NEET mentorship program for Class 11th , 12th and dropper. I have the new list of mentors and their role in the new batch .</b><br>
     </section>
 
-    <section id="neet" class="section neet">
-        <h2>NEET Mentorship Program</h2>
-        <p>Exclusive guidance for NEET students by top mentors...</p>
+    <section class="courses">
+        <h2>Our Courses</h2>
+        <div class="course-section">
+            <h3>JEE Courses / NEET courses</h3>
+            <p>Specialties:🚀 Mstudy 1:1 Personalized Mentorship Starts Tomorrow! <br>🎯
+
+<b>Dear Aspirants,</b><br>
+
+We are excited to announce that our 6-month personalized one-to-one mentorship via Google Meet starts tomorrow! 🔥<br>
+
+Get mentored by IIT/NIT/AIIMS students at the cheapest cost:<br>
+💰 ₹499 for 6 months<br>
+💰 ₹799 for 1 year<br>
+
+🔹 What You’ll Get?<br>
+✅ Instant academic doubt clearing through chat.<br>
+✅ Google Meet sessions 3 days a week (1 hour each).<br>
+✅ Expert guidance from IIT/NIT/AIIMS mentors.<br>
+✅ 24/7 Telegram chat support.<br>
+✅ All necessary study materials provided(SRG materials)<br>
+✅ Proper planning & strategy for success.<br>
+
+        </div>
+      
     </section>
 
-    <section id="courses" class="section courses">
-        <h2>New Course Launch</h2>
-        <p>Upcoming courses with expert guidance...</p>
+    <section class="new-courses">
+        <h2>Upcoming Courses</h2>
+        <div class="course-details">
+            <img src= "C:\Users\91930\Downloads\Black and Green Modern Gaming YouTube Thumbnail (1).png"alt="Ved Image">
+
+            <p>Details about the new course launching soon!</p>
+        </div>
     </section>
-    
-    <section id="mentors" class="section mentors">
+
+    <section class="mentors">
         <h2>Our Mentors</h2>
-        <p>Meet our expert mentors...</p>
+        <div class="mentor-list">
+            <div class="mentor">
+              
+                <p><b>Meet your mentors:</b>
+✅ Vishal Bhanushali Sir (AIIMS Delhi)<br>
+✅ Arif Sultan Sir (IIT Jodhpur)<br>
+✅ Vanshika Ma’am (IIT Delhi)<br>
+✅ Ishitva Sir (IIT Bombay)<br>
+✅ Shubhrajit Das Sir (NIT Silchar<br>
+✅Manish sir (NIT Silchar)<br>
+✅Himanshu sir ( NIT Silchar)<br>
+✅Ankur sir (NIT silchar)<br></p>
+            </div>
+           
+            </div>
+            <!-- Add more mentors as needed -->
+        </div>
     </section>
-    
-    <section id="contact" class="section contact">
+
+    <section class="contact">
         <h2>Contact Us</h2>
-        <p>Email: support@mstudy.com</p>
-        <p>Telegram: <a href="https://t.me/Mstudy_JEEneet" target="_blank">Join Here</a></p>
+        <p>Email: Ishitva2305mayuk@gmail.com</p>
+        <p>Join our Telegram Channel: <a href="https://t.me/mstudy_channel" target="_blank">Mstudy Telegram</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Mstudy Mentorship. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+        <
