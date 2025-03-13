@@ -126,7 +126,7 @@
         <section class="section">
             <h2>Become a Mentor</h2>
             <p>Join Mstudy as a mentor and help students achieve their dreams.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSctRyDCCpU3wNUay9fEYecVR6erBf7VyUJrbyR5ZJoRThEptg/viewform?usp=dialog" class="btn">Apply as a Mentor</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfNb2gV1WzzYhHG1B2KnJUhpLFte6_mm13lP6ZqCnKfFUTHcg/viewform?usp=sharing"class="btn">Apply as a Mentor</a>
         </section>
         <section class="section">
             <h2>Get in Touch</h2>
