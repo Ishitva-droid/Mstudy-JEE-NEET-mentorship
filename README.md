@@ -100,33 +100,38 @@
         <section class="section">
             <h2>About Mstudy</h2>
             <p>Mstudy is dedicated to providing top-notch mentorship for JEE and NEET students. Our mentors from IITs, NITs, and AIIMS guide aspirants to excel in their exams.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5zMfQvIMBCFZCw2KhmFvyAraBxU_dNhn4aWJP5AxmCls1uA/viewform?usp=dialog" class="btn">Apply for Mentorship</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5zMfQvIMBCFZCw2KhmFvyAraBxU_dNhn4aWJP5AxmCls1uA/viewform?usp=dialog" class="btn">Join as a Student</a>
+            <a href="https://t.me/+9e_FAG06q-xiMzE9" class="btn">Join Telegram Channel of MStudy</a>
+            <p style="margin-top: 20px; line-height: 1.8; font-size: 18px;">
+                🔹 <strong>What You’ll Get?</strong><br>
+                ✅ Instant academic doubt clearing through chat.<br>
+                ✅ Google Meet sessions 3 days a week (1 hour each).<br>
+                ✅ Expert guidance from IIT/NIT/AIIMS mentors.<br>
+                ✅ 24/7 Telegram chat support.<br>
+                ✅ All necessary study materials provided.<br>
+                ✅ Proper planning & strategy for success.<br>
+            </p>
         </section>
         <section class="section">
-            <h2>Why Choose Us?</h2>
-            <div class="grid">
-                <div>
-                    <h3>Expert Mentors</h3>
-                    <p>Guidance from IITians, NITians & AIIMS graduates.</p>
-                </div>
-                <div>
-                    <h3>Personalized Study Plan</h3>
-                    <p>Customized strategy for JEE & NEET success.</p>
-                </div>
-                <div>
-                    <h3>Time Management Techniques</h3>
-                    <p>Effective study schedules to balance Boards & JEE/NEET.</p>
-                </div>
-            </div>
+            <h2>Top Mentors</h2>
+            <p>🔹 Arif Sultan Sir (IIT Jodhpur)<br>
+               🔹 Vishal Bhanushali Sir (AIIMS Delhi) - Fantastic for NEET Guidance<br>
+               🔹 Himanshu Sir (NIT Silchar)<br>
+               🔹 Ankur Sir (NIT Silchar)<br>
+               🔹 Shubhrajit Sir (NIT Silchar)<br>
+               🔹 Vanshika Mam (IIT Delhi)<br>
+               🔹 Master Mentor Anurag Sir (NIT Silchar but cracked JEE with NEET)<br>
+            </p>
         </section>
         <section class="section">
-            <h2>Join as a Mentor</h2>
-            <p>If you're from IIT, NIT, or a medical college with strong problem-solving skills, apply now.</p>
-            <a href="#" class="btn">Apply Now</a>
+            <h2>Become a Mentor</h2>
+            <p>Join Mstudy as a mentor and help students achieve their dreams.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSctRyDCCpU3wNUay9fEYecVR6erBf7VyUJrbyR5ZJoRThEptg/viewform?usp=dialog" class="btn">Apply as a Mentor</a>
         </section>
         <section class="section">
-            <h2>Contact Us</h2>
-            <p>Email: contact@mstudy.com | Phone: +91 9876543210</p>
+            <h2>Get in Touch</h2>
+            <p>Have questions? Reach out to us for more details.</p>
+            <a href="mailto:ishitva2305mayuk@gmail.com" class="btn">Email Us</a>
         </section>
     </div>
     <footer>
