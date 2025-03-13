@@ -1,156 +1,160 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mstudy JEE/NEET Mentorship</title>
+    <title>Playway Kids School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Pacifico&family=Poppins:wght@300;400;700&family=Chewy&family=Fredoka+One&display=swap" rel="stylesheet">
     <style>
         body {
+            font-family: 'Poppins', sans-serif;
             margin: 0;
-            font-family: Merlin, sans-serif;
-            color: white;
-            background: linear-gradient(270deg, rgba(255,0,0,0.5), rgba(0,255,0,0.5), rgba(0,0,255,0.5));
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
+            padding: 0;
+            background: radial-gradient(circle, #FFF5E1, #FFD3A5);
+            text-align: center;
+            color: #444;
+            overflow-x: hidden;
         }
-
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
         header {
-            text-align: center;
+            background: url('header-bg.png') no-repeat center/cover;
+            color: white;
+            padding: 30px;
+            font-size: 40px;
+            font-family: 'Chewy', cursive;
+            text-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+            border-radius: 0 0 50% 50%;
+        }
+        .container {
             padding: 20px;
         }
-
-        .logo {
-            width: 100px;
+        .section {
+            margin: 40px auto;
+            padding: 30px;
+            background: #FFD166;
+            border-radius: 50px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            font-family: 'Baloo Bhai 2', cursive;
+            width: 80%;
+            position: relative;
+            transform: rotate(-2deg);
         }
-
-        section {
-            padding: 20px;
-            margin: 20px;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
+        .section:nth-child(even) {
+            transform: rotate(2deg);
+            background: #06D6A0;
+            color: white;
         }
-
-        .course-section, .mentor {
-            margin: 10px 0;
+        h2 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 32px;
+            color: #D7263D;
         }
-
-        .course-image {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .mentor img {
-            width: 80px;
-            border-radius: 50%;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.8);
-        }
-
-        .mentorship-form a {
-            color: #00ff00;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .mentor-list {
+        .gallery {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
+            gap: 20px;
         }
-
-        .mentor {
-            text-align: center;
-            margin: 10px;
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+        }
+        .students {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .student-card {
+            background: #ff477e;
+            padding: 20px;
+            border-radius: 50%;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+        }
+        button {
+            background: #06D6A0;
+            border: none;
+            padding: 12px 25px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: 0.3s;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        button:hover {
+            background: #118AB2;
+        }
+        footer {
+            background: linear-gradient(135deg, #118AB2, #06D6A0);
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+            font-family: 'Pacifico', cursive;
+            border-radius: 50% 50% 0 0;
         }
     </style>
 </head>
 <body>
     <header>
-       <img src="https://raw.githubusercontent.com/ishitva-droid/Mstudy-JEE-NEET-mentorship/main/images/Ved.png" alt="Ved Image">
-
-        <h1>Mstudy JEE/NEET Mentorship</h1>
+        🌸 Welcome to Playway Kids School 🌸
     </header>
-
-    <section class="mentorship-form">
-        <h2>Join Our Mentorship Program</h2>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5zMfQvIMBCFZCw2KhmFvyAraBxU_dNhn4aWJP5AxmCls1uA/viewform" target="_blank">Fill out the Mentorship Form</a><br>
-<p>Join our Telegram Channel: <a href="https://t.me/mstudy_channel" target="_blank">Mstudy Telegram</a></p><br>
-<br><b>NOTICE SECTION :-</b>
-<b>We Mstudy had decided yesterday that we are going to make our initiative a step more closer to a revolutionary program , So to encourage and advertise among students so that we can mentor a large number of students base present on Telegram .
-so from tomorrow we will be starting our first online batch 'Bahubali Batch' for JEE/NEET mentorship program for Class 11th , 12th and dropper. I have the new list of mentors and their role in the new batch .</b><br>
-    </section>
-
-    <section class="courses">
-        <h2>Our Courses</h2>
-        <div class="course-section">
-            <h3>JEE Courses / NEET courses</h3>
-            <p>Specialties:🚀 Mstudy 1:1 Personalized Mentorship Starts Tomorrow! <br>🎯
-
-<b>Dear Aspirants,</b><br>
-
-We are excited to announce that our 6-month personalized one-to-one mentorship via Google Meet starts tomorrow! 🔥<br>
-
-Get mentored by IIT/NIT/AIIMS students at the cheapest cost:<br>
-💰 ₹499 for 6 months<br>
-💰 ₹799 for 1 year<br>
-
-🔹 What You’ll Get?<br>
-✅ Instant academic doubt clearing through chat.<br>
-✅ Google Meet sessions 3 days a week (1 hour each).<br>
-✅ Expert guidance from IIT/NIT/AIIMS mentors.<br>
-✅ 24/7 Telegram chat support.<br>
-✅ All necessary study materials provided(SRG materials)<br>
-✅ Proper planning & strategy for success.<br>
-
+    <div class="container">
+        <div class="section">
+            <h2>About Us</h2>
+            <p>Playway Kids School is a place where learning is fun! We provide a nurturing environment for children to grow and explore.</p>
         </div>
-      
-    </section>
-
-    <section class="new-courses">
-        <h2>Upcoming Courses</h2>
-        <div class="course-details">
-            <img src= "C:\Users\91930\Downloads\Black and Green Modern Gaming YouTube Thumbnail (1).png"alt="Ved Image">
-
-            <p>Details about the new course launching soon!</p>
+        <div class="section">
+            <h2>Our Programs</h2>
+            <p>We offer a variety of play-based learning programs designed for early childhood development.</p>
+            <button>Learn More</button>
         </div>
-    </section>
-
-    <section class="mentors">
-        <h2>Our Mentors</h2>
-        <div class="mentor-list">
-            <div class="mentor">
-              
-                <p><b>Meet your mentors:</b>
-✅ Vishal Bhanushali Sir (AIIMS Delhi)<br>
-✅ Arif Sultan Sir (IIT Jodhpur)<br>
-✅ Vanshika Ma’am (IIT Delhi)<br>
-✅ Ishitva Sir (IIT Bombay)<br>
-✅ Shubhrajit Das Sir (NIT Silchar<br>
-✅Manish sir (NIT Silchar)<br>
-✅Himanshu sir ( NIT Silchar)<br>
-✅Ankur sir (NIT silchar)<br></p>
+        <div class="section">
+            <h2>Upcoming Events</h2>
+            <p>🎉 Annual Sports Day - March 20th</p>
+            <p>🎭 Drama & Theatre Fest - April 5th</p>
+            <p>🎨 Art & Craft Exhibition - April 15th</p>
+        </div>
+        <div class="section">
+            <h2>Student of the Month</h2>
+            <div class="students">
+                <div class="student-card">👦 Aryan Sharma</div>
+                <div class="student-card">👧 Anaya Verma</div>
+                <div class="student-card">👦 Rohan Gupta</div>
             </div>
-           
-            </div>
-            <!-- Add more mentors as needed -->
         </div>
-    </section>
-
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <p>Email: Ishitva2305mayuk@gmail.com</p>
-        <p>Join our Telegram Channel: <a href="https://t.me/mstudy_channel" target="_blank">Mstudy Telegram</a></p>
-    </section>
-
+        <div class="section">
+            <h2>Photo Gallery</h2>
+            <div class="gallery">
+                <img src="kids_playing.jpg" alt="Kids Playing">
+                <img src="art_class.jpg" alt="Art Class">
+                <img src="sports_day.jpg" alt="Sports Day">
+                <img src="music_fun.jpg" alt="Music Fun">
+            </div>
+        </div>
+        <div class="section">
+            <h2>Fun Learning Activities</h2>
+            <p>🎵 Music & Dance</p>
+            <p>🎨 Creative Art</p>
+            <p>📚 Storytelling Sessions</p>
+            <p>⚽ Sports & Outdoor Games</p>
+        </div>
+        <div class="section">
+            <h2>Contact Us</h2>
+            <p>Email: info@playwayschool.com</p>
+            <p>Phone: +91 9876543210</p>
+        </div>
+    </div>
     <footer>
-        <
+        &copy; 2025 Playway Kids School | All Rights Reserved | Designed with ❤️
+    </footer>
+</body>
+</html>
