@@ -2,159 +2,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playway Kids School</title>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Pacifico&family=Poppins:wght@300;400;700&family=Chewy&family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Mstudy - JEE & NEET Mentorship</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&family=Poppins:wght@300;500;700&display=swap');
+        
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: radial-gradient(circle, #FFF5E1, #FFD3A5);
-            text-align: center;
-            color: #444;
-            overflow-x: hidden;
+            background: #121212;
+            color: white;
         }
         header {
-            background: url('header-bg.png') no-repeat center/cover;
-            color: white;
-            padding: 30px;
-            font-size: 40px;
-            font-family: 'Chewy', cursive;
-            text-shadow: 4px 4px 10px rgba(0,0,0,0.3);
-            border-radius: 0 0 50% 50%;
+            background: linear-gradient(90deg, #FFD700, #FFB300);
+            color: black;
+            padding: 40px;
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            border-bottom: 8px solid black;
+            border-radius: 0 0 25px 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
         }
         .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: url('https://source.unsplash.com/1600x900/?education') center/cover no-repeat;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(255, 193, 7, 0.5);
+        }
+        .hero h1 {
+            font-size: 50px;
+            background: rgba(0, 0, 0, 0.7);
+            display: inline-block;
             padding: 20px;
+            border-radius: 15px;
         }
         .section {
-            margin: 40px auto;
-            padding: 30px;
-            background: #FFD166;
-            border-radius: 50px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-            font-family: 'Baloo Bhai 2', cursive;
-            width: 80%;
-            position: relative;
-            transform: rotate(-2deg);
+            background: rgba(255, 255, 255, 0.1);
+            padding: 60px;
+            margin: 50px 0;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(255, 193, 7, 0.4);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .section:nth-child(even) {
-            transform: rotate(2deg);
-            background: #06D6A0;
-            color: white;
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 35px rgba(255, 193, 7, 0.6);
         }
-        h2 {
-            font-family: 'Fredoka One', cursive;
-            font-size: 32px;
-            color: #D7263D;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .gallery img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 50%;
-            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
-        }
-        .students {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .student-card {
-            background: #ff477e;
-            padding: 20px;
-            border-radius: 50%;
-            color: white;
-            font-size: 18px;
+        .btn {
+            display: inline-block;
+            background: #FFD700;
+            color: black;
+            padding: 20px 40px;
+            text-decoration: none;
+            border-radius: 15px;
             font-weight: bold;
-            width: 120px;
-            height: 120px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
-        }
-        button {
-            background: #06D6A0;
-            border: none;
-            padding: 12px 25px;
-            color: white;
-            font-size: 20px;
-            cursor: pointer;
-            border-radius: 30px;
+            text-transform: uppercase;
             transition: 0.3s;
-            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 22px;
+            border: 4px solid black;
         }
-        button:hover {
-            background: #118AB2;
+        .btn:hover {
+            background: black;
+            color: #FFD700;
+            box-shadow: 0 8px 25px rgba(255, 193, 7, 0.6);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            text-align: left;
+        }
+        .grid div {
+            background: #222;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(255, 193, 7, 0.4);
+            transition: transform 0.3s;
+            font-size: 24px;
+            border-left: 6px solid #FFD700;
+        }
+        .grid div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 35px rgba(255, 193, 7, 0.5);
         }
         footer {
-            background: linear-gradient(135deg, #118AB2, #06D6A0);
-            color: white;
-            padding: 20px;
-            margin-top: 40px;
-            font-family: 'Pacifico', cursive;
-            border-radius: 50% 50% 0 0;
+            background: linear-gradient(90deg, #FFD700, #FFB300);
+            color: black;
+            text-align: center;
+            padding: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 22px;
+            border-top: 8px solid black;
+            border-radius: 25px 25px 0 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        🌸 Welcome to Playway Kids School 🌸
-    </header>
+    <header>Mstudy - JEE & NEET Mentorship</header>
     <div class="container">
-        <div class="section">
-            <h2>About Us</h2>
-            <p>Playway Kids School is a place where learning is fun! We provide a nurturing environment for children to grow and explore.</p>
+        <div class="hero">
+            <h1>Your Gateway to JEE & NEET Success</h1>
         </div>
-        <div class="section">
-            <h2>Our Programs</h2>
-            <p>We offer a variety of play-based learning programs designed for early childhood development.</p>
-            <button>Learn More</button>
-        </div>
-        <div class="section">
-            <h2>Upcoming Events</h2>
-            <p>🎉 Annual Sports Day - March 20th</p>
-            <p>🎭 Drama & Theatre Fest - April 5th</p>
-            <p>🎨 Art & Craft Exhibition - April 15th</p>
-        </div>
-        <div class="section">
-            <h2>Student of the Month</h2>
-            <div class="students">
-                <div class="student-card">👦 Aryan Sharma</div>
-                <div class="student-card">👧 Anaya Verma</div>
-                <div class="student-card">👦 Rohan Gupta</div>
+        <section class="section">
+            <h2>About Mstudy</h2>
+            <p>Mstudy provides expert mentorship for JEE and NEET aspirants. Get guided by the best mentors from IITs, NITs, and AIIMS.</p>
+        </section>
+        <section class="section">
+            <h2>Why Choose Us?</h2>
+            <div class="grid">
+                <div>
+                    <h3>Top Mentors</h3>
+                    <p>Learn from IITians, NITians & AIIMS graduates.</p>
+                </div>
+                <div>
+                    <h3>Personalized Strategy</h3>
+                    <p>Custom study plans tailored to your needs.</p>
+                </div>
+                <div>
+                    <h3>Smart Study Techniques</h3>
+                    <p>Master time management and efficient learning.</p>
+                </div>
             </div>
-        </div>
-        <div class="section">
-            <h2>Photo Gallery</h2>
-            <div class="gallery">
-                <img src="kids_playing.jpg" alt="Kids Playing">
-                <img src="art_class.jpg" alt="Art Class">
-                <img src="sports_day.jpg" alt="Sports Day">
-                <img src="music_fun.jpg" alt="Music Fun">
-            </div>
-        </div>
-        <div class="section">
-            <h2>Fun Learning Activities</h2>
-            <p>🎵 Music & Dance</p>
-            <p>🎨 Creative Art</p>
-            <p>📚 Storytelling Sessions</p>
-            <p>⚽ Sports & Outdoor Games</p>
-        </div>
-        <div class="section">
-            <h2>Contact Us</h2>
-            <p>Email: info@playwayschool.com</p>
-            <p>Phone: +91 9876543210</p>
-        </div>
+        </section>
+        <section class="section">
+            <h2>Become a Mentor</h2>
+            <p>Are you from IIT, NIT, or a top medical college? Join us as a mentor today.</p>
+            <a href="#" class="btn">Apply Now</a>
+        </section>
+        <section class="section">
+            <h2>Get in Touch</h2>
+            <p>Email: contact@mstudy.com | Phone: +91 9876543210</p>
+        </section>
     </div>
     <footer>
-        &copy; 2025 Playway Kids School | All Rights Reserved | Designed with ❤️
+        &copy; 2025 Mstudy. All Rights Reserved.
     </footer>
 </body>
 </html>
