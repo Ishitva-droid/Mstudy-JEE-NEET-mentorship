@@ -1,141 +1,144 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mstudy - JEE & NEET Mentorship</title>
+    <title>Balvatika Playway</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&family=Poppins:wght@300;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
         
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: #121212;
-            color: white;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+            background-size: 400% 400%;
+            animation: gradientBG 8s ease infinite;
+            color: #444;
         }
-        header {
-            background: linear-gradient(90deg, #FFD700, #FFB300);
-            color: black;
-            padding: 30px;
-            text-align: center;
-            font-size: 42px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-            border-bottom: 6px solid black;
-            border-radius: 0 0 20px 20px;
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         .container {
-            width: 85%;
+            width: 90%;
+            max-width: 1200px;
             margin: auto;
-            overflow: hidden;
+            padding: 20px;
         }
-        .section {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 50px;
-            margin: 50px 0;
-            border-radius: 20px;
-            box-shadow: 0 8px 16px rgba(255, 193, 7, 0.4);
+        header {
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 20px;
+            font-size: 36px;
+            font-weight: 800;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
         }
-        .section:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 30px rgba(255, 193, 7, 0.5);
-        }
-        .btn {
-            display: inline-block;
-            background: #FFD700;
-            color: black;
-            padding: 18px 36px;
-            text-decoration: none;
-            border-radius: 12px;
-            font-weight: bold;
-            text-transform: uppercase;
-            transition: 0.3s;
+        .button {
+            display: block;
+            width: max-content;
+            margin: 20px auto;
+            padding: 15px 30px;
             font-size: 20px;
-            border: 3px solid black;
+            font-weight: bold;
+            color: white;
+            background: #ff6b81;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: 0.3s;
         }
-        .btn:hover {
-            background: black;
-            color: #FFD700;
-            box-shadow: 0 6px 20px rgba(255, 193, 7, 0.6);
+        .button:hover {
+            background: #ff4757;
+        }
+        .facilities, .achievements {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 800;
+            color: #ff4757;
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
         }
         .grid div {
-            background: #222;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
-            transition: transform 0.3s;
-            font-size: 22px;
-            border-left: 5px solid #FFD700;
+            background: #ffdde1;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 10px;
         }
-        .grid div:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(255, 193, 7, 0.5);
+        .contact {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            border-radius: 15px;
+            margin-top: 30px;
         }
         footer {
-            background: linear-gradient(90deg, #FFD700, #FFB300);
-            color: black;
             text-align: center;
-            padding: 25px;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-top: 50px;
-            font-size: 20px;
-            border-top: 6px solid black;
-            border-radius: 20px 20px 0 0;
+            padding: 20px;
+            font-weight: 600;
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            border-radius: 15px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <header>Mstudy - JEE & NEET Mentorship</header>
     <div class="container">
-        <section class="section">
-            <h2>About Mstudy</h2>
-            <p>Mstudy is dedicated to providing top-notch mentorship for JEE and NEET students. Our mentors from IITs, NITs, and AIIMS guide aspirants to excel in their exams.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5zMfQvIMBCFZCw2KhmFvyAraBxU_dNhn4aWJP5AxmCls1uA/viewform?usp=dialog" class="btn">Join as a Student</a>
-            <a href="https://t.me/+9e_FAG06q-xiMzE9" class="btn">Join Telegram Channel of MStudy</a>
-            <p style="margin-top: 20px; line-height: 1.8; font-size: 18px;">
-                🔹 <strong>What You’ll Get?</strong><br>
-                ✅ Instant academic doubt clearing through chat.<br>
-                ✅ Google Meet sessions 3 days a week (1 hour each).<br>
-                ✅ Expert guidance from IIT/NIT/AIIMS mentors.<br>
-                ✅ 24/7 Telegram chat support.<br>
-                ✅ All necessary study materials provided.<br>
-                ✅ Proper planning & strategy for success.<br>
-            </p>
-        </section>
-        <section class="section">
-            <h2>Top Mentors</h2>
-            <p>🔹 Arif Sultan Sir (IIT Jodhpur)<br>
-               🔹 Vishal Bhanushali Sir (AIIMS Delhi) - Fantastic for NEET Guidance<br>
-               🔹 Himanshu Sir (NIT Silchar)<br>
-               🔹 Ankur Sir (NIT Silchar)<br>
-               🔹 Shubhrajit Sir (NIT Silchar)<br>
-               🔹 Vanshika Mam (IIT Delhi)<br>
-               🔹 Master Mentor Anurag Sir (NIT Silchar but cracked JEE with NEET)<br>
-            </p>
-        </section>
-        <section class="section">
-            <h2>Become a Mentor</h2>
-            <p>Join Mstudy as a mentor and help students achieve their dreams.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfNb2gV1WzzYhHG1B2KnJUhpLFte6_mm13lP6ZqCnKfFUTHcg/viewform?usp=sharing"class="btn">Apply as a Mentor</a>
-        </section>
-        <section class="section">
-            <h2>Get in Touch</h2>
-            <p>Have questions? Reach out to us for more details.</p>
-            <a href="mailto:ishitva2305mayuk@gmail.com" class="btn">Email Us</a>
-        </section>
+        <header>
+            Balvatika Playway - A World of Joyful Learning
+        </header>
+        <a href="#" class="button">Apply for Admission</a>
+        
+        <div class="facilities">
+            <h2>Our Facilities</h2>
+            <div class="grid">
+                <div>Smart Classes</div>
+                <div>Safe Playground</div>
+                <div>Nutritious Meals</div>
+                <div>Interactive Learning</div>
+                <div>Qualified Teachers</div>
+                <div>Fun Activities</div>
+            </div>
+        </div>
+
+        <div class="achievements">
+            <h2>Student Achievements</h2>
+            <div class="grid">
+                <div>Student of the Month</div>
+                <div>Birthday Celebrations</div>
+                <div>Test Toppers</div>
+                <div>Student of the Year</div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>Phone: +91 9876543210</p>
+            <p>Email: info@balvatikaplayway.com</p>
+            <p>Address: 123, Fun Street, Playtown, India</p>
+        </div>
+        
+        <footer>
+            © 2025 Balvatika Playway. All Rights Reserved.
+        </footer>
     </div>
-    <footer>
-        &copy; 2025 Mstudy. All Rights Reserved.
-    </footer>
 </body>
 </html>
